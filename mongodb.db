@@ -1,0 +1,21 @@
+show dbs
+use books
+
+db.book.insertOne({title : "one"})
+
+db.book.insertMany([{title : "two"}, {title : "three"}])
+
+db.book.find()
+
+db.book.find({}, {name : 1, title : 1});
+
+db.book.findOne({})
+
+db.book.find().count()
+
+db.book.find().limit(2)
+
+db.books.find().sort({name:-1})
+
+
+
